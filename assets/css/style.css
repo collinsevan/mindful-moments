@@ -9,7 +9,6 @@
 /* Body styling */
 body {
     min-height: 100vh;
-    background: url(../images/lotus-7580478_1920.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -19,45 +18,68 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.3rem 10%;
-    background: rgb(0, 0, 0, 0);
+    padding: 1.3rem 2.5%;
+    background: rgba(46, 65, 41, 0.7);
+    box-shadow: 0 2px 2px #030101;
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-between;
     z-index: 100;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     text-decoration: none;
     font-weight: 650;
+    margin-left: 0;
 }
 
 .navbar a {
     font-size: 1.15rem;
     color: white;
     text-decoration: none;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto Condensed' sans-serif;
     margin-left: 2.5rem;
 }
 /* Main content styling */
 main {
     flex: 1;
-    padding-top: 7rem;
     padding-bottom: 4rem;
-    text-align: center;
+    text-align: left;
     color: white;
+    display: flex;
+}
+
+/* Hero section */
+#hero {
+    height: 90vh;
+    width: 100%;
+    background: url("../images/theravada-buddhism-3818886_1920.jpg") no-repeat center center/cover;
+    position: relative;
 }
 
 /* Footer styling */
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 1rem 10%;
-    background: rgba(0, 0, 0, 0.7);
+    background:  rgba(46, 65, 41, 0.5);
+    backdrop-filter: blur(50px);
     text-align: center;
     color: white;
     z-index: 100;
+}
+
+#cover-text {
+    background-color: rgba(46, 65, 41, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    text-align: right;
+    max-width: 350px;
 }
