@@ -20,15 +20,44 @@ body {
     left: 0;
     width: 100%;
     padding: 1.3rem 10%;
-    background: rgb(14, 203, 58);
+    background: rgb(0, 0, 0, 0);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 100;
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
     font-weight: 650;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto' sans-serif;
+    margin-left: 2.5rem;
+}
+/* Main content styling */
+main {
+    flex: 1;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    z-index: 100;
 }
