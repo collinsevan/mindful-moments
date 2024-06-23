@@ -5,10 +5,30 @@
    box-sizing: border-box;
    font-family: 'Roboto Condensed', sans-serif; 
 }
+
 /* Body styling */
 body {
     min-height: 100vh;
     background: url(../images/lotus-7580478_1920.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgb(14, 203, 58);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 650;
 }
