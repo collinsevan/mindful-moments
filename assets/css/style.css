@@ -1,0 +1,14 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto Condensed', sans-serif; 
+}
+/* Body styling */
+body {
+    min-height: 100vh;
+    background: url(../images/lotus-7580478_1920.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
