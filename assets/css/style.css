@@ -6,7 +6,7 @@
    font-family: 'Roboto Condensed', sans-serif; 
 }
 
-/* Body styling */
+/* Body section */
 body {
     min-height: 100vh;
     background-size: cover;
@@ -36,6 +36,7 @@ body {
     margin-left: 0;
 }
 
+/* nav section */
 .navbar a {
     font-size: 1.5rem;
     color: white;
@@ -43,7 +44,21 @@ body {
     font-family: 'Roboto Condensed' sans-serif;
     margin-left: 2.5rem;
 }
-/* Main content styling */
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content section */
 main {
     flex: 1;
     padding-bottom: 4rem;
@@ -51,6 +66,10 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
+}
+
+i {
+    margin-left: 7.5px;
 }
 
 /* Hero section */
@@ -61,10 +80,22 @@ main {
     position: relative;
 }
 
+#cover-text {
+    background-color: rgba(46, 65, 41, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    text-align: right;
+    max-width: 350px;
+}
+
+/* Benefits section */
 #benefits {
-    padding: 1rem; /* Adjust padding as needed */
+    padding: 1rem; 
     text-align: left;
-    color: white; /* Example text color */
+    color: white;
 }
 
 #ben-head{
@@ -73,13 +104,32 @@ main {
     font-size: 280%;
 }
 
-#benefits h3 {
 
+#benefits > div {
+    margin-bottom: 30px; /* Adjust spacing between benefits */
 }
-#benefits-spiritual svg {
-   bottom: 0;
+
+#benefits h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
 }
-/* Footer styling */
+
+#benefits hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-color: #888;
+}
+
+#benefits p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Footer section */
 footer {
     position: relative;
     bottom: 0;
@@ -93,13 +143,16 @@ footer {
     z-index: 100;
 }
 
-#cover-text {
-    background-color: rgba(46, 65, 41, 0.7);
-    font-size: 130%;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    padding: 20px;
-    text-align: right;
-    max-width: 350px;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: white;
 }
