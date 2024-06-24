@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    background: rgb(56, 77, 50)
 }
 
 .header {
@@ -36,7 +37,7 @@ body {
 }
 
 .navbar a {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
     font-family: 'Roboto Condensed' sans-serif;
@@ -49,6 +50,7 @@ main {
     text-align: left;
     color: white;
     display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -59,6 +61,24 @@ main {
     position: relative;
 }
 
+#benefits {
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: left;
+    color: white; /* Example text color */
+}
+
+#ben-head{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits h3 {
+
+}
+#benefits-spiritual svg {
+   bottom: 0;
+}
 /* Footer styling */
 footer {
     position: relative;
