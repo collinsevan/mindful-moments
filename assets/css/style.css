@@ -94,19 +94,44 @@ i {
 /* Benefits section */
 #benefits {
     padding: 1rem; 
-    text-align: left;
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
 }
 
-#ben-head{
-    margin-bottom: 20px;
+#ben-head {
+    grid-column: 1 / span 3;
     text-align: center;
     font-size: 280%;
+    margin-bottom: 20px;
 }
 
+#benefits-physical {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    align-self: start;
+    padding-bottom: 10px;
+}
 
-#benefits > div {
-    margin-bottom: 30px; /* Adjust spacing between benefits */
+.benefits-mental {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+    align-self: start;
+    padding-bottom: 10px;
+}
+
+.benefits-social {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    align-self: end;
+}
+
+.benefits-spiritual {
+    grid-column: 3 / span 1;
+    grid-row: 3;
+    align-self: end;
 }
 
 #benefits h3 {
@@ -122,11 +147,10 @@ i {
 }
 
 #benefits p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
 }
+
 
 
 /* Footer section */
@@ -155,4 +179,20 @@ footer {
     font-size: 160%;
     padding: 5%;
     color: white;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #benefits {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    #ben-head {
+        grid-column: 1;
+    }
+    #benefits-physical, .benefits-mental, .benefits-social, .benefits-spiritual {
+        grid-column: 1;
+        grid-row: auto;
+        align-self: start;
+    }
 }
