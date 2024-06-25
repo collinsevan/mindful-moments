@@ -199,6 +199,34 @@ footer {
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
+    #nav-toggle {
+        display: block; /* Show the nav toggle for smaller screens */
+    }
+
+    .navbar {
+        display: none; /* Hide the navigation items by default for smaller screens */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 5.5rem;
+        right: 0;
+        background-color: rgba(46, 65, 41, 0.7);
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+
+    /* Show nav when checkbox is checked */
+    #nav-toggle:checked + .navbar {
+        display: flex;
+    }
+    
     #benefits {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
