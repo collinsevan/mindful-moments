@@ -214,13 +214,19 @@ footer {
 }
 
 /* Emedded video section */
+.first-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #med-video h3 {
-    padding: 1rem;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     font-size: 180%;
 }
+
 
 #mission h1,
 #join-us h2 {
@@ -240,7 +246,7 @@ footer {
 
 #mission p,
 #join-us p {
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     max-width: 800px;
     text-align: left;
