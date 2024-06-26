@@ -200,10 +200,15 @@ footer {
 }
 
 /* About Us Style */
-#mission,
-#join-us {
+#mission {
     padding: 1rem;
     margin-top: 75px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#join-us {
+    padding: 1rem;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -236,7 +241,7 @@ footer {
 #mission .our-mission,
 #join-us .join {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
