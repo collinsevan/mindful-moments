@@ -41,21 +41,23 @@ body {
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
-    font-family: 'Roboto Condensed'sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-left: 2.5rem;
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
+#nav-toggle:checked~.navbar {
+    display: block; /* Changed: Show navbar when checkbox is checked */
 }
 
 #nav-toggle {
-    display: none;
+    display: none; /* Changed: Hide checkbox by default */
 }
 
 .nav-toggle-label {
     font-size: 2rem;
+    display: none; /* Changed: Hide by default */
+    cursor: pointer;
 }
 
 /* Main content section */
@@ -199,12 +201,12 @@ footer {
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
-    #nav-toggle {
-        display: block; /* Show the nav toggle for smaller screens */
+    .nav-toggle-label {
+        display: block; /* Changed: Show the nav toggle label (hamburger icon) for smaller screens */
     }
 
     .navbar {
-        display: none; /* Hide the navigation items by default for smaller screens */
+        display: none; /* Changed: Hide the navigation items by default for smaller screens */
         flex-direction: column;
         align-items: center;
         position: absolute;
@@ -218,15 +220,13 @@ footer {
 
     .navbar a {
         margin: 1rem 0;
-        justify-content: space-between;
-        padding-right: 15px;
     }
 
     /* Show nav when checkbox is checked */
-    #nav-toggle:checked + .navbar {
-        display: flex;
+    #nav-toggle:checked + .nav-toggle-label + .navbar {
+        display: flex; /* Changed: Show navbar when checkbox is checked */
     }
-    
+
     #benefits {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
