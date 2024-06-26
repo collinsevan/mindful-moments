@@ -199,6 +199,54 @@ footer {
     color: white;
 }
 
+/* About Us Style */
+#mission {
+    padding: 1rem;
+    margin-top: 75px;
+    color: white;
+}
+#mission h2{
+    text-align: left;
+    font-size: 230%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+#med-video h2 {
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#mission p {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+#join-us{
+    padding: 1rem;
+}
+
+#join-us h2 {
+    text-align: left;
+    font-size: 230%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+#join-us p {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0;
+    text-align: left;
+    flex-wrap: wrap;
+}
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .nav-toggle-label {
