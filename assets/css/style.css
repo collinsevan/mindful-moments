@@ -51,12 +51,12 @@ body {
 }
 
 #nav-toggle {
-    display: none; 
+    display: none;
 }
 
 .nav-toggle-label {
     font-size: 2rem;
-    display: none; 
+    display: none;
     cursor: pointer;
 }
 
@@ -200,38 +200,15 @@ footer {
 }
 
 /* About Us Style */
-#mission {
+#mission,
+#join-us {
     padding: 1rem;
     margin-top: 75px;
     color: white;
-}
-#mission h2{
-    text-align: left;
-    font-size: 230%;
-    flex-wrap: wrap;
-    padding-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-#med-video h2 {
-    text-align: center;
-    font-size: 150%;
-    margin-bottom: 15px;
-    color: white;
-}
-
-#mission p {
-    font-size: 1.35rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0;
-    text-align: left;
-    flex-wrap: wrap;
-}
-
-#join-us{
-    padding: 1rem;
-}
-
+#mission h1,
 #join-us h2 {
     text-align: left;
     font-size: 230%;
@@ -239,22 +216,49 @@ footer {
     padding-top: 20px;
 }
 
+#mission hr,
+#join-us hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-color: #888;
+}
+
+#mission p,
 #join-us p {
     font-size: 1.35rem;
     line-height: 1.6;
     max-width: 800px;
-    margin: 0;
     text-align: left;
     flex-wrap: wrap;
+    margin: 0;
 }
+
+#mission .our-mission,
+#join-us .join {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#mission .our-mission img,
+#join-us .join img {
+    max-width: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .nav-toggle-label {
-        display: block; /* Show the nav toggle label (hamburger icon) for smaller screens */
+        display: block;
+        /* Show the nav toggle label (hamburger icon) for smaller screens */
     }
 
     .navbar {
-        display: none; /* Hide the navigation items by default for smaller screens */
+        display: none;
+        /* Hide the navigation items by default for smaller screens */
         flex-direction: column;
         align-items: center;
         position: absolute;
@@ -271,7 +275,7 @@ footer {
     }
 
     /* Show nav when checkbox is checked */
-    #nav-toggle:checked + .nav-toggle-label + .navbar {
+    #nav-toggle:checked+.nav-toggle-label+.navbar {
         display: flex;
     }
 
