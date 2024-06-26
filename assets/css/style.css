@@ -213,6 +213,15 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* Emedded video section */
+#med-video h3 {
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 180%;
+}
+
 #mission h1,
 #join-us h2 {
     text-align: left;
@@ -222,7 +231,8 @@ footer {
 }
 
 #mission hr,
-#join-us hr {
+#join-us hr,
+#med-video hr {
     margin-top: 5px;
     margin-bottom: 10px;
     border-color: #888;
