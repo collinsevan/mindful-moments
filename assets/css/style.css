@@ -74,7 +74,7 @@ main {
 }
 
 i {
-    margin-left: 7.5px;
+    padding-left: 7.5px;
 }
 
 /* Hero section */
@@ -226,11 +226,37 @@ footer {
 }
 
 /* Emedded video section */
-.first-vid {
+#med-video {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    color: white;
 }
+
+#med-arrow i{
+    padding-left: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-right: 25px;
+}
+
+#med-video a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+#med-video a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
 
 #med-video h3 {
     color: white;
@@ -369,5 +395,4 @@ footer {
         font-size: 1.75rem;
         margin-left: 3rem;
     }
-}
 }
