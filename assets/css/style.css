@@ -8,10 +8,12 @@
 
 /* Body section */
 body {
-    min-height: 100vh;
     background-size: cover;
     background-position: center;
     background: rgb(56, 77, 50);
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -68,6 +70,7 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
+    max-width: 1800px;
 }
 
 i {
@@ -80,6 +83,7 @@ i {
     width: 100%;
     background: url("../images/theravada-buddhism-3818886_1920.jpg") no-repeat center center/cover;
     position: relative;
+    max-height: 700px;
 }
 
 #cover-text {
@@ -159,15 +163,17 @@ i {
     grid-column: 2 / span 1;
     grid-row: 2 / span 2;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #center-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 40%;
+    border-radius: 50%;
     object-fit: cover;
-    margin-left: 30px;
     margin-top: 5px;
+    aspect-ratio: 1;
 }
 
 
@@ -205,12 +211,18 @@ footer {
     margin-top: 75px;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #join-us {
     padding: 1rem;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Emedded video section */
@@ -246,12 +258,13 @@ footer {
 
 #mission p,
 #join-us p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     max-width: 800px;
     text-align: left;
     flex-wrap: wrap;
     margin: 0;
+    flex-direction: column;
 }
 
 #mission .our-mission,
@@ -268,6 +281,7 @@ footer {
     max-width: 40%;
     border-radius: 50%;
     object-fit: cover;
+    aspect-ratio: 1;
 }
 
 /* Media Query for smaller screens */
@@ -323,4 +337,37 @@ footer {
         grid-row: auto;
         flex-wrap: wrap;
     }
+}
+
+/* Media Query for larger screens */
+@media (min-width: 1800px) {
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.3rem 2.5%;
+        background: rgba(46, 65, 41, 0.7);
+        box-shadow: 0 2px 2px #030101;
+        backdrop-filter: blur(50px);
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
+    .navbar a {
+        font-size: 1.75rem;
+        margin-left: 3rem;
+    }
+}
 }
