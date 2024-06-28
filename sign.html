@@ -21,7 +21,7 @@
         <a href="index.html" class="logo">Mindful Moments</a>
         <!--Navigation-->
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
             <i class="fa-solid fa-bars"></i>
         </label>
         <nav class="navbar">
@@ -30,25 +30,27 @@
             <a href="sign.html">Sign Up</a>
         </nav>
     </header>
+
     <!--Main Content-->
     <main>
         <section>
             <h1 id="free-sign">Sign Up for Free Guided Meditation <i class="fa-solid fa-spa fa-lg"></i></h1>
             <div class="form-sign">
-                <form action="http://formdump.codeinstitute.net" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                <form action="http://formdump.codeinstitute.net" method="POST" aria-labelledby="free-sign">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Enter your name">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Enter your email address">
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required aria-label="Enter your password">
 
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required
+                        aria-label="Confirm your password">
 
-                    <button type="submit">Sign Up</button>
+                    <button type="submit" aria-label="Submit form">Sign Up</button>
                 </form>
             </div>
         </section>
@@ -79,8 +81,11 @@
             </li>
         </ul>
     </footer>
+
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
