@@ -11,7 +11,7 @@ Mindful Moments is a website designed to introduce you to the transformative pow
 ## Table of Contents
 
 - [User Experience (UX)](#user-experience-ux)
-- [Features](#features)
+- [Features](#existing-features)
 - [Design Language](#design-language)
 - [Technologies](#technologies)
 - [Testing](#testing)
@@ -47,8 +47,6 @@ Mindful Moments is a website designed to introduce you to the transformative pow
 - **Personalized Practice Recommendations:** Tailor suggestions for meditation practices based on individual preferences and needs.
 - **Community Forum:** Create a platform for users to connect, share experiences, and support each other in their mindfulness journey.
 
-## Design Language
-
 ### Typography
 
 - **Font Family:** Roboto Condensed for headings and body text, providing a modern and clean aesthetic.
@@ -74,9 +72,15 @@ Mindful Moments is a website designed to introduce you to the transformative pow
 - **Google Fonts:** Provides the Roboto Condensed and Crimson Pro fonts for a unique typographic style.
 
 ## Testing
+![Sign-up-audit](assets/images/sign-test-formdump.png)
+![About-us-audit](assets/images/about-lighthouse.png)
+![Index-audit](assets/images/index-lighthouse.png)
+- The site has been tested with lighthouse. The only issue is with the formdump provided. It does not have https protocol so the best practices score is 78 on sign up page. 
+- All links have been tested and are functional.
 
 ### Validation
-
+![CSS Validated](assets/images/css-validated.png)
+![HTML Validated](assets/images/html-validated.png)
 - HTML and CSS code has been validated to ensure compliance with web standards and best practices.
 
 ### Browser Compatibility
@@ -86,8 +90,17 @@ Mindful Moments is a website designed to introduce you to the transformative pow
 
 ## Deployment
 
-- The website is currently deployed at [Add Your Deployment Link Here]
+### How the site was deployed
+
+- From the Github repository, I set up Github pages from the main branch.
+- The website is currently deployed at [https://collinsevan.github.io/mindful-moments/index.html]
+
+## Credits
+
+- I took inspiration from code institutes and Ana greaves love running project for the cover text and benefits but put my spin on it by using a center image and a grid layout. [https://github.com/Code-Institute-Org/love-running-2.0]
+
+- I used a meditation video from the 'Great Meditaion' channel on youtube. [https://www.youtube.com/embed/ssss7V1_eyA]
 
 ---
 
-**Note:** This README focuses on the front-end aspects of the Mindful Moments website as observed in the provided HTML and CSS. If there are additional backend features or functionalities, please provide details so they can be included in the README.
+**Note:** This README focuses on the front-end aspects of the Mindful Moments website as observed in the provided HTML and CSS.
