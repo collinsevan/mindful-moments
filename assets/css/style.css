@@ -70,7 +70,6 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    max-width: 1800px;
 }
 
 i {
@@ -139,6 +138,7 @@ i {
     grid-column: 3 / span 1;
     grid-row: 3;
     align-self: end;
+    padding-top: 50px;
 }
 
 #benefits h3 {
@@ -433,7 +433,13 @@ button:hover {
 }
 
 /* Media Query for larger screens */
-@media (min-width: 1800px) {
+@media (min-width: 1920px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2160px;
+    }
+
     .header {
         position: relative;
         top: 0;
@@ -459,7 +465,7 @@ button:hover {
     }
 
     .navbar a {
-        font-size: 1.75rem;
+        font-size: 2rem;
         margin-left: 3rem;
     }
 }
