@@ -97,7 +97,7 @@ Mindful Moments is a website designed to introduce you to the transformative pow
 
 ## Credits
 
-- I took inspiration from code institutes and Ana greaves love running project for the cover text and benefits but put my spin on it by using a center image and a grid layout. [https://github.com/Code-Institute-Org/love-running-2.0]
+- I took inspiration from code institutes and Ana greaves love running project for the cover text and benefits but put my spin on it by using a center image and a grid layout. Also I followed the footer structure but used my own styling [https://github.com/Code-Institute-Org/love-running-2.0]
 
 - I used a meditation video from the 'Great Meditaion' channel on youtube. [https://www.youtube.com/embed/ssss7V1_eyA]
 
